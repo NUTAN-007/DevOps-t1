@@ -1,0 +1,13 @@
+name: CI Pipeline
+
+on: [push]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: echo "Install steps here"
+      - name: Run tests
+        run: echo "Test commands here"
